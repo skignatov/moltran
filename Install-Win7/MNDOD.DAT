@@ -1,0 +1,1819 @@
+C
+C         ATOM PARAMETERS FOR MNDO, MNDOD, AM1, PM3 METHODS
+C
+// COMMON parameters
+ CORE    1      1.D0
+ CORE    2      2.D0
+ CORE    3      1.D0
+ CORE    4      2.D0
+ CORE    5      3.D0
+ CORE    6      4.D0
+ CORE    7      5.D0
+ CORE    8      6.D0
+ CORE    9      7.D0
+ CORE   10      8.D0
+ CORE   11      1.D0
+ CORE   12      2.D0
+ CORE   13      3.D0
+ CORE   14      4.D0
+ CORE   15      5.D0
+ CORE   16      6.D0
+ CORE   17      7.D0
+ CORE   18      8.D0
+ CORE   19      1.D0
+ CORE   20      2.D0
+ CORE   21      3.D0
+ CORE   22      4.D0
+ CORE   23      5.D0
+ CORE   24      6.D0
+ CORE   25      7.D0
+ CORE   26      8.D0
+ CORE   27      9.D0
+ CORE   28     10.D0
+ CORE   29     11.D0
+ CORE   30      2.D0
+ CORE   31      3.D0
+ CORE   32      4.D0
+ CORE   33      5.D0
+ CORE   34      6.D0
+ CORE   35      7.D0
+ CORE   36      8.D0
+ CORE   37      1.D0
+ CORE   38      2.D0
+ CORE   39      3.D0
+ CORE   40      4.D0
+ CORE   41      5.D0
+ CORE   42      6.D0
+ CORE   43      7.D0
+ CORE   44      8.D0
+ CORE   45      9.D0
+ CORE   46     10.D0
+ CORE   47     11.D0
+ CORE   48      2.D0
+ CORE   49      3.D0
+ CORE   50      4.D0
+ CORE   51      5.D0
+ CORE   52      6.D0
+ CORE   53      7.D0
+ CORE   54      8.D0
+ CORE   55      1.D0
+ CORE   56      2.D0
+ CORE   72      4.D0
+ CORE   73      5.D0
+ CORE   74      6.D0
+ CORE   75      7.D0
+ CORE   76      8.D0
+ CORE   77      9.D0
+ CORE   78     10.D0
+ CORE   79     11.D0
+ CORE   80      2.D0
+ CORE   81      3.D0
+ CORE   82      4.D0
+ CORE   83      5.D0
+ CORE   84      6.D0
+ CORE   85      7.D0
+ CORE   86      8.D0
+C
+C     ENTHALPIES OF FORMATION OF GASEOUS ATOMS ARE TAKEN FROM \ANNUAL
+C     REPORTS,1974,71B,P 117\  THERE ARE SOME SIGNIFICANT DIFFERENCES
+C     BETWEEN THE VALUES REPORTED THERE AND THE VALUES PREVIOUSLY IN
+C     THE BLOCK DATA OF THIS PROGRAM.  ONLY THE THIRD  ROW ELEMENTS
+C     HAVE BEEN UPDATED.
+C
+* ALL THE OTHER ELEMENTS ARE TAKEN FROM CRC HANDBOOK 1981-1982
+EHEAT    1     52.102D0 
+EHEAT    2      0.000D0 
+EHEAT    3     38.410D0 
+EHEAT    4     76.960D0 
+EHEAT    5    135.700D0 
+EHEAT    6    170.890D0 
+EHEAT    7    113.000D0 
+EHEAT    8     59.559D0 
+EHEAT    9     18.890D0 
+EHEAT   10     0.000D0 
+EHEAT   11    25.850D0 
+EHEAT   12    35.000D0 
+EHEAT   13    79.490D0 
+EHEAT   14   108.390D0 
+EHEAT   15    75.570D0 
+EHEAT   16    66.400D0 
+EHEAT   17    28.990D0 
+EHEAT   18     0.000D0 
+EHEAT   19    21.420D0 
+EHEAT   20    42.600D0 
+EHEAT   21    90.300D0 
+EHEAT   22   112.300D0 
+EHEAT   23   122.900D0 
+EHEAT   24    95.000D0 
+EHEAT   25    67.700D0 
+EHEAT   26    99.300D0 
+EHEAT   27   102.400D0 
+EHEAT   28   102.800D0 
+EHEAT   29    80.700D0 
+EHEAT   30    31.170D0 
+EHEAT   31    65.400D0 
+EHEAT   32    89.500D0 
+EHEAT   33    72.300D0 
+EHEAT   34    54.300D0 
+EHEAT   35    26.740D0 
+EHEAT   36     0.000D0 
+EHEAT   37    19.600D0 
+EHEAT   38    39.100D0 
+EHEAT   39   101.500D0 
+EHEAT   40   145.500D0 
+EHEAT   41   172.400D0 
+EHEAT   42   157.300D0 
+EHEAT   44   155.500D0 
+EHEAT   45   133.000D0 
+EHEAT   46    90.000D0 
+EHEAT   47    68.100D0 
+EHEAT   48    26.720D0 
+EHEAT   49    58.000D0 
+EHEAT   50    72.200D0 
+EHEAT   51    63.200D0 
+EHEAT   52    47.000D0 
+EHEAT   53    25.517D0 
+EHEAT   54     0.000D0 
+EHEAT   55    18.700D0 
+EHEAT   56    42.500D0 
+EHEAT   58   101.300D0 
+EHEAT   62    49.400D0 
+EHEAT   68    75.800D0 
+EHEAT   70    36.350D0 
+EHEAT   72   148.000D0 
+EHEAT   73   186.900D0 
+EHEAT   74   203.100D0 
+EHEAT   75   185.000D0 
+EHEAT   76   188.000D0 
+EHEAT   77   160.000D0 
+EHEAT   78   135.200D0 
+EHEAT   79    88.000D0 
+EHEAT   80    14.690D0 
+EHEAT   81    43.550D0 
+EHEAT   82    46.620D0 
+EHEAT   83    50.100D0 
+EHEAT   86     0.000D0 
+// Start of MNDO parameters
+USS      1     -11.906276D0
+USS      3     -5.128D0
+USS      4     -16.602378D0
+USS      5     -34.547130D0
+USS      6     -52.279745D0
+USS      7     -71.932122D0
+USS      8     -99.644309D0
+USS      9     -131.071548D0
+USS     11     -4.1666904D0
+USS     12    -12.930749D0
+USS     13    -23.807097D0
+USS     14    -40.568292D0
+USS     15    -56.14336D0
+USS     16    -72.242281D0
+USS     17    -100.227166D0
+USS     30    -20.839716D0
+USS     35    -99.98644054D0
+USS     48    -16.868D0
+USS     50    -40.851802D0
+USS     53    -100.0030538D0
+USS     80    -19.809574D0
+USS     82    -47.319692D0
+UPP      1      0.D0
+UPP      3      0.D0
+UPP      4     -10.703771D0
+UPP      5     -23.121690D0
+UPP      6     -39.205558D0
+UPP      7     -57.172319D0
+UPP      8     -77.797472D0
+UPP      9     -105.782137D0
+UPP     11    -3.1236828D0
+UPP     12    -8.9828829D0
+UPP     13    -17.519878D0
+UPP     14    -28.089187D0
+UPP     15    -42.85108D0
+UPP     16    -56.973207D0
+UPP     17    -77.378667D0
+UPP     30    -19.625224D0
+UPP     35    -75.67130754D0
+UPP     48    -15.590D0
+UPP     50    -28.560249D0
+UPP     53    -74.61146919D0
+UPP     80    -13.10253000D0
+UPP     82    -28.847560D0
+ZS       1    1.331967D0
+ZS       3    0.702380D0
+ZS       4    1.004210D0
+ZS       5    1.506801D0
+ZS       6    1.787537D0
+ZS       7    2.255614D0
+ZS       8    2.699905D0
+ZS       9    2.848487D0
+ZS      11    2.124810D0
+ZS      12    1.615122D0
+ZS      13    1.444161D0
+ZS      14    1.435306D0
+ZS      15    2.10872D0
+ZS      16    2.312962D0
+ZS      17    3.784645D0
+ZS      30    2.047359D0
+ZS      35    3.85430190D0
+ZS      48    2.5272D0
+ZS      50    2.080380D0
+ZS      53    2.27296101D0
+ZS      80    2.218184D0
+ZS      82    2.498286D0
+ZP       1    1.331967D0
+ZP       3    0.702380D0
+ZP       4    1.004210D0
+ZP       5    1.506801D0
+ZP       6    1.787537D0
+ZP       7    2.255614D0
+ZP       8    2.699905D0
+ZP       9    2.848487D0
+ZP      11    0.95339766D0
+ZP      12    1.171962D0
+ZP      13    1.444161D0
+ZP      14    1.435306D0
+ZP      15    1.785810D0
+ZP      16    2.009146D0
+ZP      17    2.036263D0
+ZP      30    1.460946D0
+ZP      35    2.199209140D0
+ZP      48    1.4058D0
+ZP      50    1.937106D0
+ZP      53    2.16949803D0
+ZP      80    2.06503800D0
+ZP      82    2.08207100D0
+BETAS    1    -6.989064D0
+BETAS    3    -1.350040D0
+BETAS    4    -4.017096D0
+BETAS    5     -8.252054D0
+BETAS    6     -18.985044D0
+BETAS    7     -20.495758D0
+BETAS    8     -32.688082D0
+BETAS    9     -48.290460D0
+BETAS   11    -0.67995974D0
+BETAS   12    -1.2452364D0
+BETAS   13    -2.670284D0
+BETAS   14     -4.256218D0
+BETAS   15     -6.7916D0
+BETAS   16     -10.761670D0
+BETAS   17     -14.26232D0
+BETAS   30    -1.0D0
+BETAS   35     -8.91710680D0
+BETAS   48     -2.1816D0
+BETAS   50     -3.235147D0
+BETAS   53     -7.4144514D0
+BETAS   80     -0.404525D0
+BETAS   82     -8.042387D0
+BETAP    1     0.D0
+BETAP    3     -1.250040D0
+BETAP    4     -4.017096D0
+BETAP    5      -8.252054D0
+BETAP    6      -7.934122D0
+BETAP    7      -20.495758D0
+BETAP    8      -32.688082D0
+BETAP    9      -36.508540D0
+BETAP   11     -0.67995974D0
+BETAP   12     -1.24523640D0
+BETAP   13     -2.6702840D0
+BETAP   14       -4.256218D0
+BETAP   15       -6.7916D0
+BETAP   16      -10.108433D0
+BETAP   17     -14.26232D0
+BETAP   30     -2.0D0
+BETAP   35     -9.94373080D0
+BETAP   48     -1.5430D0
+BETAP   50     -4.290416D0
+BETAP   53     -6.19678120D0
+BETAP   80     -6.2066830D0
+BETAP   82     -3.D0
+ALP      1     2.544134D0
+ALP      3    1.250140D0
+ALP      4    1.669434D0
+ALP      5     2.134993D0
+ALP      6     2.546380D0
+ALP      7     2.861342D0
+ALP      8     3.160604D0
+ALP      9     3.419661D0
+ALP     11    0.94968442D0
+ALP     12    1.4620230D0
+ALP     13    1.868839D0
+ALP     14     2.1961078D0
+ALP     15     2.41528D0
+ALP     16     2.478026D0
+ALP     17     2.542201D0
+ALP     30    1.506457D0
+ALP     35    2.445570512D0
+ALP     48    1.3149D0
+ALP     50    1.800814D0
+ALP     53    2.20732001D0
+ALP     80    1.335641D0
+ALP     82    1.728333D0
+C
+C     EISOL IS THE ELECTRONIC ENERGY OF THE ATOM, IN EV.
+C
+EISOL    1     -11.906276D0
+EISOL    3     -5.128D0
+EISOL    4     -24.204740D0
+EISOL    5     -64.315950D0
+EISOL    6     -120.500606D0
+EISOL    7      -202.581201D0
+EISOL    8      -317.868506D0
+EISOL    9      -476.683781D0
+EISOL   11      -4.41290380D0
+EISOL   12      -19.474150D0
+EISOL   13      -44.484070D0
+EISOL   14      -90.53496D0
+EISOL   15      -152.95996D0
+EISOL   16      -226.01239D0
+EISOL   17      -353.137667D0
+EISOL   30      -29.879432D0
+EISOL   35      -346.681250D0
+EISOL   48      -22.93635052D0
+EISOL   50      -92.324102D0
+EISOL   53      -340.42788131D0
+EISOL   80      -28.819148D0
+EISOL   82      -105.834504D0
+C
+C     THE PARAMETERS DD,QQ,ADD ARE GIVEN IN ATOMIC UNITS.
+C
+DD       1     0.D0
+DD       3     2.054978320D0
+DD       4     1.4373245367D0
+DD       5     0.95790723D0
+DD       6     0.80746618D0
+DD       7     0.63990367D0
+DD       8     0.53460239D0
+DD       9     0.50671661D0
+DD      11    0.14807800D0
+DD      12    0.34552900D0
+DD      13    1.3992386875D0
+DD      14    1.4078708D0
+DD      15    1.0129691D0
+DD      16    0.9189935D0
+DD      17    0.4986874D0
+DD      30    1.3037826D0
+DD      35    0.60510902335D0
+DD      48    0.95233808D0
+DD      50    1.5697766162D0
+DD      53    1.4253209760D0
+DD      80    1.7378047906D0
+DD      82    1.5526624328D0
+QQ       1    0.D0
+QQ       3    1.743706930D0
+QQ       4    1.219610312D0
+QQ       5    0.81281124D0
+QQ       6    0.68515777D0
+QQ       7    0.54297627D0
+QQ       8    0.45362517D0
+QQ       9    0.42996330D0
+QQ      11    0.26982100D0
+QQ      12    0.38431500D0
+QQ      13    1.158679713D0
+QQ      14    1.1658282D0
+QQ      15    0.9370083D0
+QQ      16    0.8328514D0
+QQ      17    0.8217592D0
+QQ      30    1.4520183D0
+QQ      35    0.96458326995D0
+QQ      48    1.95376631D0
+QQ      50    1.32622918710D0
+QQ      53    1.18416632800D0
+QQ      80    1.46080635112D0
+QQ      82    1.44885579110D0
+C
+ADD      1,1  1.05891968D0
+ADD      1,2  1.05891968D0
+ADD      1,3  1.05891968D0
+ADD      3,1  1.86369863D0
+ADD      3,2  2.20284359D0
+ADD      3,3  1.91235216D0
+ADD      4,1  1.5116666667D0
+ADD      4,2  1.4898058334D0
+ADD      4,3  1.2943518624D0
+ADD      5,1   1.28470255D0
+ADD      5,2  1.01942409D0
+ADD      5,3   0.89976948D0
+ADD      6,1   1.11242846D0
+ADD      6,2   0.81307772D0
+ADD      6,3   0.74784277D0
+ADD      7,1   1.00110375D0
+ADD      7,2   0.63745891D0
+ADD      7,3   0.61389465D0
+ADD      8,1   0.88229572D0
+ADD      8,2   0.52123718D0
+ADD      8,3   0.52654116D0
+ADD      9,1   0.80407801D0
+ADD      9,2   0.46081672D0
+ADD      9,3   0.48338867D0
+ADD     11,1   0.18588700D0
+ADD     11,2   0.12642700D0
+ADD     11,3   0.34979700D0
+ADD     12,1   0.34442200D0
+ADD     12,2   0.55506500D0
+ADD     12,3   0.46891800D0
+ADD     13,1   1.6817058096D0
+ADD     13,2   1.8971197390D0
+ADD     13,3   1.3610775610D0
+ADD     14,1   1.3854375D0
+ADD     14,2   1.4527205D0
+ADD     14,3   1.2554558D0
+ADD     15,1   1.1769022D0
+ADD     15,2   1.0240828D0
+ADD     15,3   1.0041364D0
+C      ADD(16,1)= 0.4733554D0
+C      ADD(16,2)= 0.5544502D0
+C      ADD(16,3)= 0.5585244D0
+ADD     16,1    1.0562888D0
+ADD     16,2    0.9017942D0
+ADD     16,3    0.8952160D0
+ADD     17,1    0.9051884D0
+ADD     17,2    0.6202539D0
+ADD     17,3    0.8239135D0
+ADD     30,1   1.1529661D0
+ADD     30,2   2.1044550D0
+ADD     30,3   1.8255784D0
+ADD     35,1   0.90480196579D0
+ADD     35,2   0.68886377242D0
+ADD     35,3   0.89692029689D0
+ADD     48,1   1.25972222D0
+ADD     48,2   1.17186373D0
+ADD     48,3   1.73417545D0
+ADD     50,1   1.34632013480D0
+ADD     50,2   1.55279580660D0
+ADD     50,3   1.46395405620D0
+ADD     53,1   0.90456078851D0
+ADD     53,2   1.08850480450D0
+ADD     53,3   1.10938669760D0
+ADD     80,1   1.25972222620D0
+ADD     80,2   1.64058451570D0
+ADD     80,3   1.43550214980D0
+ADD     82,1   1.38826530610D0
+ADD     82,2   1.54353897270D0
+ADD     82,3   1.42773239240D0
+C
+C     *************************
+C           NEW PARAMETERS
+C     *************************
+C
+C     ***** ARSENICUM ******
+C
+USS     33    -55.731195D0
+UPP     33    -41.269656D0
+ZS      33    2.872981D0
+ZP      33    2.197232D0
+BETAS   33    -4.347037D0
+BETAP   33    -6.698521D0
+ALP     33    2.194299D0
+EISOL   33    -147.394080D0
+DD      33    .945429D0
+QQ      33    .965451D0
+ADD     33,1   1.176903D0
+ADD     33,2   0.985844D0
+ADD     33,3   1.176903D0
+EHEAT   33     72.12D0
+CORE    33     5.D0
+C
+// Start of MNDOD parameters
+C *** HYDROGEN
+C      WRITE(6,'('' PARAMETERS FOR HYDROGEN FROM 31.08.93.'')')
+USS      1      -11.82872312D0
+ZS       1        1.43478139D0
+BETAS    1       -6.14727128D0
+ALP      1        2.67652428D0
+ADD      1,1       .81093654D0
+EISOL    1      -11.82872312D0
+C *** CARBON
+C      WRITE(6,'('' PARAMETERS FOR CARBON   FROM 31.08.93.'')')
+USS      6     -52.29128060D0
+UPP      6     -39.28733448D0
+ZS       6       1.79438178D0
+ZP       6       1.75969516D0
+BETAS    6     -19.03287387D0
+BETAP    6      -7.83429581D0
+ALP      6       2.65265849D0
+ADD      6,1      .92917850D0
+ADD      6,2      .97040820D0
+ADD      6,3      .86969664D0
+EISOL    6     -123.44131991D0
+C *** NITROGEN
+C      WRITE(6,'('' PARAMETERS FOR NITROGEN FROM  2.09.93.'')')
+USS      7     -70.74682795D0
+UPP      7     -53.50090613D0
+ZS       7       2.01938512D0
+ZP       7         2.40495666D0
+BETAS    7     -18.53201584D0
+BETAP    7     -20.26395404D0
+ALP      7       3.10110335D0
+ADD      7,1       .94256121D0
+ADD      7,2       .64260028D0
+ADD      7,3       .00183131D0
+EISOL    7    -201.96623874D0
+C *** OXYGEN
+C      WRITE(6,'('' PARAMETERS FOR OXYGEN   FROM  31.08.93.'')')
+USS      8      -98.88412010D0
+UPP      8      -72.12598476D0
+ZS       8        4.15612174D0
+ZP       8        2.67344147D0
+BETAS    8       -31.24475747D0
+BETAP    8      -32.88975374D0
+ALP      8       3.15394644D0
+ADD      8,1      .94133595D0
+ADD      8,2      .66978989D0
+ADD      8,3      .28989124D0
+EISOL    8     -308.32333513D0
+C *** CHLORINE
+C      WRITE(6,'('' PARAMETERS FOR CHLORINE FROM  11.01.94.'')')
+ADD     17,1    1.46857859D0
+ADD     17,2    1.11401274D0
+ADD     17,3     .59138381D0
+C ***  CHROMIUM
+C      WRITE(6,'('' PARAMETERS FOR CHROMIUM FROM 25.11.93.'')')
+// Start of AM1 parameters
+***********************************************************************
+*
+*    START OF AM1 PARAMETERS
+*
+***********************************************************************
+C                    DATA FOR ELEMENT  1       AM1:   HYDROGEN
+C      DATA REFAM  ( 1)/'  H: (AM1): M.J.S. DEWAR ET AL, J. AM. CHEM. SOC
+C     1. 107 3902-3909 (1985)          '/
+USS      1       -11.3964270D0
+BETAS    1        -6.1737870D0
+ZS       1         1.1880780D0
+ALP      1         2.8823240D0
+EISOL    1       -11.3964270D0
+GSS      1        12.8480000D0
+AM       1         0.4721793D0
+AD       1         0.4721793D0
+AQ       1         0.4721793D0
+GUES1    1,1         0.1227960D0
+GUES2    1,1         5.0000000D0
+GUES3    1,1         1.2000000D0
+GUES1    1,2         0.0050900D0
+GUES2    1,2         5.0000000D0
+GUES3    1,2         1.8000000D0
+GUES1    1,3        -0.0183360D0
+GUES2    1,3         2.0000000D0
+GUES3    1,3         2.1000000D0
+C                    DATA FOR ELEMENT  3       AM1:   LITHIUM    *
+C      DATA REFAM  ( 3)/' Li: (MNDO):  TAKEN FROM MNDOC BY W.THIEL,
+C     1QCPE NO.438, V. 2, P.63, (1982).'/
+USS      3      -5.1280000D0
+UPP      3      -2.7212000D0
+BETAS    3      -1.3500400D0
+BETAP    3      -1.3500400D0
+ZS       3       0.7023800D0
+ZP       3       0.7023800D0
+ALP      3       1.2501400D0
+EISOL    3      -5.1280000D0
+GSS      3       7.3000000D0
+GSP      3       5.4200000D0
+GPP      3       5.0000000D0
+GP2      3       4.5200000D0
+HSP      3       0.8300000D0
+DD       3       2.0549783D0
+QQ       3       1.7437069D0
+AM       3       0.2682837D0
+AD       3         0.2269793D0
+AQ       3         0.2614581D0
+C                    DATA FOR ELEMENT  4       AM1:   BERYLLIUM  *
+C      DATA REFAM  ( 4)/' Be: (MNDO):  M.J.S. DEWAR, H.S. RZEPA, J. AM. C
+C     1HEM. SOC., 100, 777, (1978)     '/
+USS      4     -16.6023780D0
+UPP      4     -10.7037710D0
+BETAS    4      -4.0170960D0
+BETAP    4      -4.0170960D0
+ZS       4       1.0042100D0
+ZP       4       1.0042100D0
+ALP      4       1.6694340D0
+EISOL    4     -24.2047560D0
+GSS      4       9.0000000D0
+GSP      4       7.4300000D0
+GPP      4       6.9700000D0
+GP2      4       6.2200000D0
+HSP      4       1.2800000D0
+DD       4       1.4373245D0
+QQ       4       1.2196103D0
+AM       4       0.3307607D0
+AD       4       0.3356142D0
+AQ       4       0.3846373D0
+C                    DATA FOR ELEMENT  5       AM1:   BORON  *
+C      DATA REFAM  ( 5)/'  B: (AM1):  M.J.S. DEWAR, C. JIE, E. G. ZOEBISC
+C     1H ORGANOMETALLICS 7, 513 (1988) '/
+C                    DATA FOR ELEMENT  5
+USS      5     -34.4928700D0
+UPP      5     -22.6315250D0
+BETAS    5      -9.5991140D0
+BETAP    5      -6.2737570D0
+ZS       5       1.6117090D0
+ZP       5       1.5553850D0
+ALP      5       2.4469090D0
+EISOL    5     -63.7172650D0
+GSS      5      10.5900000D0
+GSP      5       9.5600000D0
+GPP      5       8.8600000D0
+GP2      5       7.8600000D0
+HSP      5       1.8100000D0
+DD       5       0.9107622D0
+QQ       5       0.7874223D0
+AM       5       0.3891951D0
+AD       5       0.5045152D0
+AQ       5       0.5678856D0
+C                    DATA FOR ELEMENT  6       AM1:   CARBON
+C      DATA REFAM  ( 6)/'  C: (AM1): M.J.S. DEWAR ET AL, J. AM. CHEM. SOC
+C     1. 107 3902-3909 (1985)          '/
+USS      6     -52.0286580D0
+UPP      6     -39.6142390D0
+BETAS    6     -15.7157830D0
+BETAP    6      -7.7192830D0
+ZS       6       1.8086650D0
+ZP       6       1.6851160D0
+ALP      6       2.6482740D0
+EISOL    6    -120.8157940D0
+GSS      6      12.2300000D0
+GSP      6      11.4700000D0
+GPP      6      11.0800000D0
+GP2      6       9.8400000D0
+HSP      6       2.4300000D0
+DD       6       0.8236736D0
+QQ       6       0.7268015D0
+AM       6       0.4494671D0
+AD       6       0.6082946D0
+AQ       6       0.6423492D0
+GUES1    6,1       0.0113550D0
+GUES2    6,1       5.0000000D0
+GUES3    6,1       1.6000000D0
+GUES1    6,2       0.0459240D0
+GUES2    6,2       5.0000000D0
+GUES3    6,2       1.8500000D0
+GUES1    6,3      -0.0200610D0
+GUES2    6,3       5.0000000D0
+GUES3    6,3       2.0500000D0
+GUES1    6,4      -0.0012600D0
+GUES2    6,4       5.0000000D0
+GUES3    6,4       2.6500000D0
+C                    DATA FOR ELEMENT  7       AM1:   NITROGEN
+C      DATA REFAM  ( 7)/'  N: (AM1): M.J.S. DEWAR ET AL, J. AM. CHEM. SOC
+C     1. 107 3902-3909 (1985)          '/
+USS     7     -71.8600000D0
+UPP      7     -57.1675810D0
+BETAS    7     -20.2991100D0
+BETAP    7     -18.2386660D0
+ZS       7       2.3154100D0
+ZP       7       2.1579400D0
+ALP      7       2.9472860D0
+EISOL    7    -202.4077430D0
+GSS      7      13.5900000D0
+GSP      7      12.6600000D0
+GPP      7      12.9800000D0
+GP2      7      11.5900000D0
+HSP      7       3.1400000D0
+DD       7       0.6433247D0
+QQ       7       0.5675528D0
+AM       7       0.4994487D0
+AD       7       0.7820840D0
+AQ       7       0.7883498D0
+GUES1    7,1       0.0252510D0
+GUES2    7,1       5.0000000D0
+GUES3    7,1       1.5000000D0
+GUES1    7,2       0.0289530D0
+GUES2    7,2       5.0000000D0
+GUES3    7,2       2.1000000D0
+GUES1    7,3      -0.0058060D0
+GUES2    7,3       2.0000000D0
+GUES3    7,3       2.4000000D0
+C                    DATA FOR ELEMENT  8       AM1:   OXYGEN
+C      DATA REFAM  ( 8)/'  O: (AM1): M.J.S. DEWAR ET AL, J. AM. CHEM. SOC
+C     1. 107 3902-3909 (1985)          '/
+USS      8     -97.8300000D0
+UPP      8     -78.2623800D0
+BETAS    8     -29.2727730D0
+BETAP    8     -29.2727730D0
+ZS       8       3.1080320D0
+ZP       8       2.5240390D0
+ALP      8       4.4553710D0
+EISOL    8    -316.0995200D0
+GSS      8      15.4200000D0
+GSP      8      14.4800000D0
+GPP      8      14.5200000D0
+GP2      8      12.9800000D0
+HSP      8       3.9400000D0
+DD       8       0.4988896D0
+QQ       8       0.4852322D0
+AM       8       0.5667034D0
+AD       8       0.9961066D0
+AQ       8       0.9065223D0
+GUES1    8,1       0.2809620D0
+GUES2    8,1       5.0000000D0
+GUES3    8,1       0.8479180D0
+GUES1    8,2       0.0814300D0
+GUES2    8,2       7.0000000D0
+GUES3    8,2       1.4450710D0
+C                    DATA FOR ELEMENT  9       AM1:   FLUORINE  *
+C      DATA REFAM  ( 9)/'  F: (AM1): M.J.S. DEWAR AND E. G. ZOEBISCH, THE
+C     1OCHEM, 180, 1 (1988).           '/
+USS      9    -136.1055790D0
+UPP      9    -104.8898850D0
+BETAS    9     -69.5902770D0
+BETAP    9     -27.9223600D0
+ZS       9       3.7700820D0
+ZP       9       2.4946700D0
+ALP      9       5.5178000D0
+EISOL    9    -482.2905830D0
+GSS      9      16.9200000D0
+GSP      9      17.2500000D0
+GPP      9      16.7100000D0
+GP2      9      14.9100000D0
+HSP      9       4.8300000D0
+DD       9       0.4145203D0
+QQ       9       0.4909446D0
+AM       9       0.6218302D0
+AD       9       1.2088792D0
+AQ       9       0.9449355D0
+GUES1    9,1       0.2420790D0
+GUES2    9,1       4.8000000D0
+GUES3    9,1       0.9300000D0
+GUES1    9,2       0.0036070D0
+GUES2    9,2       4.6000000D0
+GUES3    9,2       1.6600000D0
+C                    DATA FOR ELEMENT 13       AM1:   ALUMINUM  *
+C      DATA REFAM  (13)/' Al: (AM1):  M. J. S. Dewar, A. J. Holder, Organ
+C     1ometallics, 9, 508-511 (1990).  '/
+USS     13     -24.3535850D0
+UPP     13     -18.3636450D0
+BETAS   13      -3.8668220D0
+BETAP   13      -2.3171460D0
+ZS      13       1.5165930D0
+ZP      13       1.3063470D0
+ZD      13       1.0000000D0
+ALP     13       1.9765860D0
+EISOL   13     -46.4208150D0
+GSS     13       8.0900000D0
+GSP     13       6.6300000D0
+GPP     13       5.9800000D0
+GP2     13       5.4000000D0
+HSP     13       0.7000000D0
+DD      13       1.4040443D0
+QQ      13       1.2809154D0
+AM      13       0.2973172D0
+AD      13       0.2630229D0
+AQ      13       0.3427832D0
+GUES1   13,1       0.0900000D0
+GUES2   13,1      12.3924430D0
+GUES3   13,1       2.0503940D0
+C                    DATA FOR ELEMENT 14       AM1:   SILICON  *
+C      DATA REFAM  (14)/' Si: (AM1): M.J.S.DEWAR, C. JIE, ORGANOMETALLICS
+C     1, 6, 1486-1490 (1987).          '/
+USS     14     -33.9536220D0
+UPP     14     -28.9347490D0
+BETAS   14      -3.784852D0
+BETAP   14      -1.968123D0
+ZS      14       1.830697D0
+ZP      14       1.2849530D0
+ZD      14       1.0000000D0
+ALP     14       2.257816D0
+EISOL   14     -79.0017420D0
+GSS     14       9.8200000D0
+GSP     14       8.3600000D0
+GPP     14       7.3100000D0
+GP2     14       6.5400000D0
+HSP     14       1.3200000D0
+DD      14       1.1631107D0
+QQ      14       1.3022422D0
+AM      14       0.3608967D0
+AD      14       0.3829813D0
+AQ      14       0.3712106D0
+GUES1   14,1       0.25D0
+GUES2   14,1       9.000D0
+GUES3   14,1       0.911453D0
+GUES1   14,2       0.061513D0
+GUES2   14,2       5.00D0
+GUES3   14,2       1.995569D0
+GUES1   14,3       0.0207890D0
+GUES2   14,3       5.00D0
+GUES3   14,3       2.990610D0
+C                    DATA FOR ELEMENT 15        PHOSPHORUS
+C      DATA REFAM  (15)/'  P: (AM1): M.J.S.DEWAR, JIE, C, THEOCHEM, 187,
+C     11 (1989)                        '/
+USS     15     -42.0298630D0
+UPP     15     -34.0307090D0
+BETAS   15      -6.3537640D0
+BETAP   15      -6.5907090D0
+ZS      15       1.9812800D0
+ZP      15       1.8751500D0
+ZD      15       1.0000000D0
+ALP     15       2.4553220D0
+EISOL   15    -124.4368355D0
+GSS     15      11.5600050D0
+GSP     15       5.2374490D0
+GPP     15       7.8775890D0
+GP2     15       7.3076480D0
+HSP     15       0.7792380D0
+DD      15       1.0452022D0
+QQ      15       0.8923660D0
+AM      15       0.4248440D0
+AD      15       0.3275319D0
+AQ      15       0.4386854D0
+GUES1   15,1      -0.0318270D0
+GUES2   15,1       6.0000000D0
+GUES3   15,1       1.4743230D0
+GUES1   15,2       0.0184700D0
+GUES2   15,2       7.0000000D0
+GUES3   15,2       1.7793540D0
+GUES1   15,3       0.0332900D0
+GUES2   15,3       9.0000000D0
+GUES3   15,3       3.0065760D0
+C                    DATA FOR ELEMENT 16       AM1:   SULFUR  *
+C
+C      DATA REFAM  (16)/'  S: (AM1): M.J.S.DEWAR, Y-C YUAN, THEOCHEM, IN
+C     1 PRESS                          '/
+USS     16       -56.6940560D0
+UPP     16       -48.7170490D0
+BETAS   16        -3.9205660D0
+BETAP   16        -7.9052780D0
+ZS      16         2.3665150D0
+ZP      16         1.6672630D0
+ZD      16         1.0000000D0
+ALP     16         2.4616480D0
+EISOL   16      -191.7321930D0
+GSS     16        11.7863290D0
+GSP     16         8.6631270D0
+GPP     16        10.0393080D0
+GP2     16         7.7816880D0
+HSP     16         2.5321370D0
+DD      16         0.9004265D0
+QQ      16         1.0036329D0
+AM      16         0.4331617D0
+AD      16         0.5907115D0
+AQ      16         0.6454943D0
+GUES1   16,1        -0.5091950D0
+GUES2   16,1         4.5936910D0
+GUES3   16,1         0.7706650D0
+GUES1   16,2        -0.0118630D0
+GUES2   16,2         5.8657310D0
+GUES3   16,2         1.5033130D0
+GUES1   16,3         0.0123340D0
+GUES2   16,3        13.5573360D0
+GUES3   16,3         2.0091730D0
+C                    DATA FOR ELEMENT 17          :   CHLORINE  *
+C      DATA REFAM   17)/' Cl:     ): M.J.S. DEWAR AND E. G. ZOEBISCH, THE
+C     1OCHEM, 180, 1  1988).           '/
+USS     17      -111.6139480D0
+UPP     17       -76.6401070D0
+BETAS   17       -24.5946700D0
+BETAP   17       -14.6372160D0
+ZS      17         3.6313760D0
+ZP      17         2.0767990D0
+ZD      17         1.0000000D0
+ALP     17         2.9193680D0
+EISOL   17      -372.1984310D0
+GSS     17        15.0300000D0
+GSP     17        13.1600000D0
+GPP     17        11.3000000D0
+GP2     17         9.9700000D0
+HSP     17         2.4200000D0
+DD      17         0.5406286D0
+QQ      17         0.8057208D0
+AM      17         0.5523705D0
+AD      17         0.7693200D0
+AQ      17         0.6133369D0
+GUES1   17,1         0.0942430D0
+GUES2   17,1         4.0000000D0
+GUES3   17,1         1.3000000D0
+GUES1   17,2         0.0271680D0
+GUES2   17,2         4.0000000D0
+GUES3   17,2         2.1000000D0
+C                    DATA FOR ELEMENT 30        ZINC
+C      DATA REFAM   30)/' Zn:  AM1):  M.J.S. DEWAR, K.M. MERZ, ORGANOMET
+C     1ALLICS, 7, 522-524  1988)       '/
+USS     30       -21.0400080D0
+UPP     30       -17.6555740D0
+BETAS   30        -1.9974290D0
+BETAP   30        -4.7581190D0
+ZS      30         1.9542990D0
+ZP      30         1.3723650D0
+ZD      30         1.0000000D0
+ALP     30         1.4845630D0
+EISOL   30       -30.2800160D0
+GSS     30        11.8000000D0
+GSP     30        11.1820180D0
+GPP     30        13.3000000D0
+GP2     30        12.9305200D0
+HSP     30         0.4846060D0
+DD      30         1.3581113D0
+QQ      30         1.5457406D0
+AM      30         0.4336641D0
+AD      30         0.2317423D0
+AQ      30         0.2621165D0
+C                    DATA FOR ELEMENT 32        GERMANIUM
+C      DATA REFAM   32)/' Ge:  AM1): M.J.S.Dewar and C.Jie, Organometalli
+C     1cs, 8, 1544,  1989)             '/
+USS     32       -34.1838890D0
+UPP     32       -28.6408110D0
+BETAS   32        -4.3566070D0
+BETAP   32        -0.9910910D0
+ZS      32         1.2196310D0
+ZP      32         1.9827940D0
+ALP     32         2.1364050D0
+EISOL   32       -78.7084810D0
+GSS     32        10.1686050D0
+GSP     32         8.1444730D0
+GPP     32         6.6719020D0
+GP2     32         6.2697060D0
+HSP     32         0.9370930D0
+DD      32         1.2472095D0
+QQ      32         1.0698642D0
+AM      32         0.3737084D0
+AD      32         0.3180309D0
+AQ      32         0.3485612D0
+C                    DATA FOR ELEMENT 35       AM1:   BROMINE  *
+C      DATA REFAM   35)/' Br:  AM1): M.J.S. DEWAR AND E. G. ZOEBISCH, THE
+C     1OCHEM, 180, 1  1988).           '/
+USS     35      -104.6560630D0
+UPP     35       -74.9300520D0
+BETAS   35       -19.3998800D0
+BETAP   35        -8.9571950D0
+ZS      35         3.0641330D0
+ZP      35         2.0383330D0
+ZD      35         1.0000000D0
+ALP     35         2.5765460D0
+EISOL   35      -352.3142087D0
+GSS     35        15.0364395D0
+GSP     35        13.0346824D0
+GPP     35        11.2763254D0
+GP2     35         9.8544255D0
+HSP     35         2.4558683D0
+DD      35         0.8458104D0
+QQ      35         1.0407133D0
+AM      35         0.5526071D0
+AD      35         0.6024598D0
+AQ      35         0.5307555D0
+GUES1   35,1         0.0666850D0
+GUES2   35,1         4.0000000D0
+GUES3   35,1         1.5000000D0
+GUES1   35,2         0.0255680D0
+GUES2   35,2         4.0000000D0
+GUES3   35,2         2.3000000D0
+C                    DATA FOR ELEMENT 53       AM1:   IODINE  *
+C      DATA REFAM   53)/'  I:  AM1): M.J.S. DEWAR AND E. G. ZOEBISCH, THE
+C     1OCHEM, 180, 1  1988).           '/
+USS     53      -103.5896630D0
+UPP     53       -74.4299970D0
+BETAS   53        -8.4433270D0
+BETAP   53        -6.3234050D0
+ZS      53         2.1028580D0
+ZP      53         2.1611530D0
+ZD      53         1.0000000D0
+ALP     53         2.2994240D0
+EISOL   53      -346.8642857D0
+GSS     53        15.0404486D0
+GSP     53        13.0565580D0
+GPP     53        11.1477837D0
+GP2     53         9.9140907D0
+HSP     53         2.4563820D0
+DD      53         1.4878778D0
+QQ      53         1.1887388D0
+AM      53         0.5527544D0
+AD      53         0.4497523D0
+AQ      53         0.4631775D0
+GUES1   53,1         0.0043610D0
+GUES2   53,1         2.3000000D0
+GUES3   53,1         1.8000000D0
+GUES1   53,2         0.0157060D0
+GUES2   53,2         3.0000000D0
+GUES3   53,2         2.2400000D0
+C                    DATA FOR ELEMENT 80        MERCURY
+C      DATA REFAM   80)/' Hg:  AM1): M.J.S.Dewar and C.Jie, Organometalli
+C     1cs 8, 1547,  1989)              '/
+USS     80       -19.9415780D0
+UPP     80       -11.1108700D0
+BETAS   80        -0.9086570D0
+BETAP   80        -4.9093840D0
+ZS      80         2.0364130D0
+ZP      80         1.9557660D0
+ALP     80         1.4847340D0
+EISOL   80       -29.0831560D0
+GSS     80        10.8000000D0
+GSP     80         9.3000000D0
+GPP     80        14.3000000D0
+GP2     80        13.5000000D0
+HSP     80         1.3000000D0
+DD      80         1.8750829D0
+QQ      80         1.5424241D0
+AM      80         0.3969129D0
+AD      80         0.2926605D0
+AQ      80         0.3360599D0
+C
+C     START OF "OLD" ELEMENTS: THESE ARE OLD PARAMETERS WHICH
+C     CAN BE USED, IF DESIRED, BY SPECIFYING "<CHEMICAL SYMBOL>YEAR"
+C     AS IN SI1978 OR  S1983.
+C
+C                    DATA FOR ELEMENT 90        SILICON
+C      DATA REFAM   90)/' Si:  MNDO): M.J.S.DEWAR, M.L.MCKEE, H.S.RZEPA,
+C     1J. AM. CHEM. SOC., 100 3607 1978'/
+C
+// Start of PM3 parameters
+C
+C                    DATA FOR ELEMENT  1        HYDROGEN
+C      DATA REFPM3   1  '  H:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1 10, 209  1989).                '/
+USS      1       -13.0733210D0
+BETAS    1        -5.6265120D0
+ZS       1         0.9678070D0
+ALP      1         3.3563860D0
+EISOL    1       -13.0733210D0
+GSS      1        14.7942080D0
+AM       1         0.5437048D0
+AD       1         0.5437048D0
+AQ       1         0.5437048D0
+GUES1    1,1         1.1287500D0
+GUES2    1,1         5.0962820D0
+GUES3    1,1         1.5374650D0
+GUES1    1,2        -1.0603290D0
+GUES2    1,2         6.0037880D0
+GUES3    1,2         1.5701890D0
+C                    DATA FOR ELEMENT  4        BERYLLIUM
+C      DATA REFPM3( 4)/ ' Be:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1(ACCEPTED)                      '/
+USS      4       -17.2647520D0
+UPP      4       -11.3042430D0
+BETAS    4        -3.9620530D0
+BETAP    4        -2.7806840D0
+ZS       4         0.8774390D0
+ZP       4         1.5087550D0
+ALP      4         1.5935360D0
+EISOL    4       -25.5166530D0
+GSS      4         9.0128510D0
+GSP      4         6.5761990D0
+GPP      4         6.0571820D0
+GP2      4         9.0052190D0
+HSP      4         0.5446790D0
+DD       4         1.0090531D0
+QQ       4         0.8117586D0
+AM       4         0.3312330D0
+AD       4         0.2908996D0
+AQ       4         0.3530008D0
+GUES1    4,1         1.6315720D0
+GUES2    4,1         2.6729620D0
+GUES3    4,1         1.7916860D0
+GUES1    4,2        -2.1109590D0
+GUES2    4,2         1.9685940D0
+GUES3    4,2         1.7558710D0
+C                    DATA FOR ELEMENT  6        CARBON
+C      DATA REFPM3   6)/'  C:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1 10, 209  1989).                '/
+USS      6       -47.2703200D0
+UPP      6       -36.2669180D0
+BETAS    6       -11.9100150D0
+BETAP    6        -9.8027550D0
+ZS       6         1.5650850D0
+ZP       6         1.8423450D0
+ALP      6         2.7078070D0
+EISOL    6      -111.2299170D0
+GSS      6        11.2007080D0
+GSP      6        10.2650270D0
+GPP      6        10.7962920D0
+GP2      6         9.0425660D0
+HSP      6         2.2909800D0
+CHPP      6         0.876863D0
+DD       6         0.8332396D0
+QQ       6         0.6647750D0
+AM       6         0.4116394D0
+AD       6         0.5885862D0
+AQ       6         0.7647667D0
+GUES1    6,1         0.0501070D0
+GUES2    6,1         6.0031650D0
+GUES3    6,1         1.6422140D0
+GUES1    6,2         0.0507330D0
+GUES2    6,2         6.0029790D0
+GUES3    6,2         0.8924880D0
+C                    DATA FOR ELEMENT  7        NITROGEN
+C      DATA REFPM3   7  '  N:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1 10, 209  1989).                '/
+USS      7       -49.3356720D0
+UPP      7       -47.5097360D0
+BETAS    7       -14.0625210D0
+BETAP    7       -20.0438480D0
+ZS       7         2.0280940D0
+ZP       7         2.3137280D0
+ALP      7         2.8305450D0
+EISOL    7      -157.6137755D0
+GSS      7        11.9047870D0
+GSP      7         7.3485650D0
+GPP      7        11.7546720D0
+GP2      7        10.8072770D0
+HSP      7         1.1367130D0
+DD       7         0.6577006D0
+QQ       7         0.5293383D0
+AM       7         0.4375151D0
+AD       7         0.5030995D0
+AQ       7         0.7364933D0
+GUES1    7,1         1.5016740D0
+GUES2    7,1         5.9011480D0
+GUES3    7,1         1.7107400D0
+GUES1    7,2        -1.5057720D0
+GUES2    7,2         6.0046580D0
+GUES3    7,2         1.7161490D0
+C                    DATA FOR ELEMENT  8        OXYGEN
+C      DATA REFPM3   8)/'  O:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1 10, 209  1989).                '/
+USS      8       -86.9930020D0
+UPP      8       -71.8795800D0
+BETAS    8       -45.2026510D0
+BETAP    8       -24.7525150D0
+ZS       8         3.7965440D0
+ZP       8         2.3894020D0
+ALP      8         3.2171020D0
+EISOL    8      -289.3422065D0
+GSS      8        15.7557600D0
+GSP      8        10.6211600D0
+GPP      8        13.6540160D0
+GP2      8        12.4060950D0
+HSP      8         0.5938830D0
+DD       8         0.4086173D0
+QQ       8         0.5125738D0
+AM       8         0.5790430D0
+AD       8         0.5299630D0
+AQ       8         0.8179630D0
+GUES1    8,1        -1.1311280D0
+GUES2    8,1         6.0024770D0
+GUES3    8,1         1.6073110D0
+GUES1    8,2         1.1378910D0
+GUES2    8,2         5.9505120D0
+GUES3    8,2         1.5983950D0
+C                    DATA FOR ELEMENT  9        FLUORINE
+C      DATA REFPM3   9)/'  F:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1 10, 209  1989).                '/
+USS      9      -110.4353030D0
+UPP      9      -105.6850470D0
+BETAS    9       -48.4059390D0
+BETAP    9       -27.7446600D0
+ZS       9         4.7085550D0
+ZP       9         2.4911780D0
+ALP      9         3.3589210D0
+EISOL    9      -437.5171690D0
+GSS      9        10.4966670D0
+GSP      9        16.0736890D0
+GPP      9        14.8172560D0
+GP2      9        14.4183930D0
+HSP      9         0.7277630D0
+DD       9         0.3125302D0
+QQ       9         0.4916328D0
+AM       9         0.3857650D0
+AD       9         0.6768503D0
+AQ       9         0.6120047D0
+GUES1    9,1        -0.0121660D0
+GUES2    9,1         6.0235740D0
+GUES3    9,1         1.8568590D0
+GUES1    9,2        -0.0028520D0
+GUES2    9,2         6.0037170D0
+GUES3    9,2         2.6361580D0
+C                    DATA FOR ELEMENT 12        MAGNESIUM
+C      DATA REFPM3(12)/ ' Mg:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1(ACCEPTED)                      '/
+USS     12       -14.6236880D0
+UPP     12       -14.1734600D0
+BETAS   12        -2.0716910D0
+BETAP   12        -0.5695810D0
+ZS      12         0.6985520D0
+ZP      12         1.4834530D0
+ALP     12         1.3291470D0
+EISOL   12       -22.5530760D0
+GSS     12         6.6943000D0
+GSP     12         6.7939950D0
+GPP     12         6.9104460D0
+GP2     12         7.0908230D0
+HSP     12         0.5433000D0
+DD      12         1.1403950D0
+QQ      12         1.1279899D0
+AM      12         0.2460235D0
+AD      12         0.2695751D0
+AQ      12         0.2767522D0
+GUES1   12,1         2.1170500D0
+GUES2   12,1         6.0094770D0
+GUES3   12,1         2.0844060D0
+GUES1   12,2        -2.5477670D0
+GUES2   12,2         4.3953700D0
+GUES3   12,2         2.0636740D0
+C                    DATA FOR ELEMENT 13        ALUMINUM
+C      DATA REFPM3  13)/' Al:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1 10, 209  1989).                '/
+USS     13       -24.8454040D0
+UPP     13       -22.2641590D0
+BETAS   13        -0.5943010D0
+BETAP   13        -0.9565500D0
+ZS      13         1.7028880D0
+ZP      13         1.0736290D0
+ZD      13         1.0000000D0
+ALP     13         1.5217030D0
+EISOL   13       -46.8647630D0
+GSS     13         5.7767370D0
+GSP     13        11.6598560D0
+GPP     13         6.3477900D0
+GP2     13         6.1210770D0
+HSP     13         4.0062450D0
+DD      13         1.2102799D0
+QQ      13         1.5585645D0
+AM      13         0.2123020D0
+AD      13         0.6418584D0
+AQ      13         0.2262838D0
+GUES1   13,1        -0.4730900D0
+GUES2   13,1         1.9158250D0
+GUES3   13,1         1.4517280D0
+GUES1   13,2        -0.1540510D0
+GUES2   13,2         6.0050860D0
+GUES3   13,2         2.5199970D0
+C                    DATA FOR ELEMENT 14        SILICON
+C      DATA REFPM3  14)/' Si:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1 10, 209  1989).                '/
+USS     14       -26.7634830D0
+UPP     14       -22.8136350D0
+BETAS   14        -2.8621450D0
+BETAP   14        -3.9331480D0
+ZS      14         1.6350750D0
+ZP      14         1.3130880D0
+ZD      14         1.0000000D0
+ALP     14         2.1358090D0
+EISOL   14       -67.7882140D0
+GSS     14         5.0471960D0
+GSP     14         5.9490570D0
+GPP     14         6.7593670D0
+GP2     14         5.1612970D0
+HSP     14         0.9198320D0
+DD      14         1.3144550D0
+QQ      14         1.2743396D0
+AM      14         0.1854905D0
+AD      14         0.3060715D0
+AQ      14         0.4877432D0
+GUES1   14,1        -0.3906000D0
+GUES2   14,1         6.0000540D0
+GUES3   14,1         0.6322620D0
+GUES1   14,2         0.0572590D0
+GUES2   14,2         6.0071830D0
+GUES3   14,2         2.0199870D0
+C                    DATA FOR ELEMENT 15        PHOSPHORUS
+C      DATA REFPM3  15)/'  P:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1 10, 209  1989).                '/
+USS     15       -40.4130960D0
+UPP     15       -29.5930520D0
+BETAS   15       -12.6158790D0
+BETAP   15        -4.1600400D0
+ZS      15         2.0175630D0
+ZP      15         1.5047320D0
+ZD      15         1.0000000D0
+ALP     15         1.9405340D0
+EISOL   15      -117.9591740D0
+GSS     15         7.8016150D0
+GSP     15         5.1869490D0
+GPP     15         6.6184780D0
+GP2     15         6.0620020D0
+HSP     15         1.5428090D0
+DD      15         1.0644947D0
+QQ      15         1.1120386D0
+AM      15         0.2867187D0
+AD      15         0.4309446D0
+AQ      15         0.3732517D0
+GUES1   15,1        -0.6114210D0
+GUES2   15,1         1.9972720D0
+GUES3   15,1         0.7946240D0
+GUES1   15,2        -0.0939350D0
+GUES2   15,2         1.9983600D0
+GUES3   15,2         1.9106770D0
+C                    DATA FOR ELEMENT 16        SULFUR
+C      DATA REFPM3  16)/'  S:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1 10, 209  1989).                '/
+USS     16       -49.8953710D0
+UPP     16       -44.3925830D0
+BETAS   16        -8.8274650D0
+BETAP   16        -8.0914150D0
+ZS      16         1.8911850D0
+ZP      16         1.6589720D0
+ZD      16         1.0000000D0
+ALP     16         2.2697060D0
+EISOL   16      -183.4537395D0
+GSS     16         8.9646670D0
+GSP     16         6.7859360D0
+GPP     16         9.9681640D0
+GP2     16         7.9702470D0
+HSP     16         4.0418360D0
+DD      16         1.1214313D0
+QQ      16         1.0086488D0
+AM      16         0.3294622D0
+AD      16         0.6679118D0
+AQ      16         0.6137472D0
+GUES1   16,1        -0.3991910D0
+GUES2   16,1         6.0006690D0
+GUES3   16,1         0.9621230D0
+GUES1   16,2        -0.0548990D0
+GUES2   16,2         6.0018450D0
+GUES3   16,2         1.5799440D0
+C                    DATA FOR ELEMENT 17        CHLORINE
+C      DATA REFPM3  17  ' Cl:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1 10, 209  1989).                '/
+USS     17      -100.6267470D0
+UPP     17       -53.6143960D0
+BETAS   17       -27.5285600D0
+BETAP   17       -11.5939220D0
+ZS      17         2.2462100D0
+ZP      17         2.1510100D0
+ZD      17         1.0000000D0
+ALP     17         2.5172960D0
+EISOL   17      -315.1949480D0
+GSS     17        16.0136010D0
+GSP     17         8.0481150D0
+GPP     17         7.5222150D0
+GP2     17         7.5041540D0
+HSP     17         3.4811530D0
+DD      17         0.9175856D0
+QQ      17         0.7779230D0
+AM      17         0.5885190D0
+AD      17         0.6814522D0
+AQ      17         0.3643694D0
+GUES1   17,1        -0.1715910D0
+GUES2   17,1         6.0008020D0
+GUES3   17,1         1.0875020D0
+GUES1   17,2        -0.0134580D0
+GUES2   17,2         1.9666180D0
+GUES3   17,2         2.2928910D0
+C                    DATA FOR ELEMENT 30        ZINC
+C      DATA REFPM3(30   ' Zn:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1(ACCEPTED)                      '/
+USS     30       -18.5321980D0
+UPP     30       -11.0474090D0
+BETAS   30        -0.7155780D0
+BETAP   30        -6.3518640D0
+ZS      30         1.8199890D0
+ZP      30         1.5069220D0
+ZD      30         1.0000000D0
+ALP     30         1.3501260D0
+EISOL   30       -27.3872000D0
+GSS     30         9.6771960D0
+GSP     30         7.7362040D0
+GPP     30         4.9801740D0
+GP2     30         4.6696560D0
+HSP     30         0.6004130D0
+DD      30         1.5005758D0
+QQ      30         1.4077174D0
+AM      30         0.3556485D0
+AD      30         0.2375689D0
+AQ      30         0.2661069D0
+GUES1   30,1        -0.1112340D0
+GUES2   30,1         6.0014780D0
+GUES3   30,1         1.5160320D0
+GUES1   30,2        -0.1323700D0
+GUES2   30,2         1.9958390D0
+GUES3   30,2         2.5196420D0
+C                    DATA FOR ELEMENT 31        GALLIUM
+C      DATA REFPM3(31   ' Ga:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1(ACCEPTED)                      '/
+USS     31       -29.8555930D0
+UPP     31       -21.8753710D0
+BETAS   31        -4.9456180D0
+BETAP   31        -0.4070530D0
+ZS      31         1.8470400D0
+ZP      31         0.8394110D0
+ALP     31         1.6051150D0
+EISOL   31       -57.3280250D0
+GSS     31         8.4585540D0
+GSP     31         8.9256190D0
+GPP     31         5.0868550D0
+GP2     31         4.9830450D0
+HSP     31         2.0512600D0
+DD      31         0.9776692D0
+QQ      31         2.5271534D0
+AM      31         0.3108620D0
+AD      31         0.5129360D0
+AQ      31         0.1546208D0
+GUES1   31,1        -0.5601790D0
+GUES2   31,1         5.6232730D0
+GUES3   31,1         1.5317800D0
+GUES1   31,2        -0.2727310D0
+GUES2   31,2         1.9918430D0
+GUES3   31,2         2.1838640D0
+C                    DATA FOR ELEMENT 32        GERMANIUM
+C      DATA REFPM3(32   ' Ge:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1(ACCEPTED)                      '/
+USS     32       -35.4671955D0
+UPP     32       -31.5863583D0
+BETAS   32        -5.3250024D0
+BETAP   32        -2.2501567D0
+ZS      32         2.2373526D0
+ZP      32         1.5924319D0
+ALP     32         1.9723370D0
+EISOL   32       -84.0156006D0
+GSS     32         5.3769635D0
+GSP     32        10.2095293D0
+GPP     32         7.6718647D0
+GP2     32         6.9242663D0
+HSP     32         1.3370204D0
+DD      32         1.1920304D0
+QQ      32         1.3321263D0
+AM      32         0.1976098D0
+AD      32         0.3798182D0
+AQ      32         0.3620669D0
+GUES1   32,1         0.9631726D0
+GUES2   32,1         6.0120134D0
+GUES3   32,1         2.1633655D0
+GUES1   32,2        -0.9593891D0
+GUES2   32,2         5.7491802D0
+GUES3   32,2         2.1693724D0
+C                    DATA FOR ELEMENT 33        ARSENIC
+C      DATA REFPM3(33   ' As:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1(ACCEPTED)                      '/
+USS     33       -38.5074240D0
+UPP     33       -35.1524150D0
+BETAS   33        -8.2321650D0
+BETAP   33        -5.0173860D0
+ZS      33         2.6361770D0
+ZP      33         1.7038890D0
+ALP     33         1.7944770D0
+EISOL   33      -122.6326140D0
+GSS     33         8.7890010D0
+GSP     33         5.3979830D0
+GPP     33         8.2872500D0
+GP2     33         8.2103460D0
+HSP     33         1.9510340D0
+DD      33         0.9679655D0
+QQ      33         1.2449874D0
+AM      33         0.3230063D0
+AD      33         0.5042239D0
+AQ      33         0.2574219D0
+GUES1   33,1        -0.4600950D0
+GUES2   33,1         1.9831150D0
+GUES3   33,1         1.0867930D0
+GUES1   33,2        -0.0889960D0
+GUES2   33,2         1.9929440D0
+GUES3   33,2         2.1400580D0
+C                    DATA FOR ELEMENT 34        SELENIUM
+C      DATA REFPM3(34   ' Se:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1(ACCEPTED)                      '/
+USS     34       -55.3781350D0
+UPP     34       -49.8230760D0
+BETAS   34        -6.1578220D0
+BETAP   34        -5.4930390D0
+ZS      34         2.8280510D0
+ZP      34         1.7325360D0
+ALP     34         3.0439570D0
+EISOL   34      -192.7748115D0
+GSS     34         7.4325910D0
+GSP     34        10.0604610D0
+GPP     34         9.5683260D0
+GP2     34         7.7242890D0
+HSP     34         4.0165580D0
+DD      34         0.8719813D0
+QQ      34         1.2244019D0
+AM      34         0.2731566D0
+AD      34         0.7509697D0
+AQ      34         0.5283737D0
+GUES1   34,1         0.0478730D0
+GUES2   34,1         6.0074000D0
+GUES3   34,1         2.0817170D0
+GUES1   34,2         0.1147200D0
+GUES2   34,2         6.0086720D0
+GUES3   34,2         1.5164230D0
+C                    DATA FOR ELEMENT 35        BROMINE
+C      DATA REFPM3  35  ' Br:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1 10, 209  1989).                '/
+USS     35      -116.6193110D0
+UPP     35       -74.2271290D0
+BETAS   35       -31.1713420D0
+BETAP   35        -6.8140130D0
+ZS      35         5.3484570D0
+ZP      35         2.1275900D0
+ZD      35         1.0000000D0
+ALP     35         2.5118420D0
+EISOL   35      -352.5398970D0
+GSS     35        15.9434250D0
+GSP     35        16.0616800D0
+GPP     35         8.2827630D0
+GP2     35         7.8168490D0
+HSP     35         0.5788690D0
+DD      35         0.2759025D0
+QQ      35         0.9970532D0
+AM      35         0.5859399D0
+AD      35         0.6755383D0
+AQ      35         0.3823719D0
+GUES1   35,1         0.9604580D0
+GUES2   35,1         5.9765080D0
+GUES3   35,1         2.3216540D0
+GUES1   35,2        -0.9549160D0
+GUES2   35,2         5.9447030D0
+GUES3   35,2         2.3281420D0
+C                    DATA FOR ELEMENT 48        CADMIUM
+C      DATA REFPM3(48   ' Cd:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1(ACCEPTED)                      '/
+USS     48       -15.8285840D0
+UPP     48         8.7497950D0
+BETAS   48        -8.5819440D0
+BETAP   48        -0.6010340D0
+ZS      48         1.6793510D0
+ZP      48         2.0664120D0
+ALP     48         1.5253820D0
+EISOL   48       -22.4502080D0
+GSS     48         9.2069600D0
+GSP     48         8.2315390D0
+GPP     48         4.9481040D0
+GP2     48         4.6696560D0
+HSP     48         1.6562340D0
+DD      48         1.5982681D0
+QQ      48         1.2432402D0
+AM      48         0.3383668D0
+AD      48         0.3570290D0
+AQ      48         0.2820582D0
+C                    DATA FOR ELEMENT 49        INDIUM
+C      DATA REFPM3(49   ' In:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1(ACCEPTED)                      '/
+USS     49       -26.1762050D0
+UPP     49       -20.0058220D0
+BETAS   49        -2.9933190D0
+BETAP   49        -1.8289080D0
+ZS      49         2.0161160D0
+ZP      49         1.4453500D0
+ALP     49         1.4183850D0
+EISOL   49       -51.9750470D0
+GSS     49         6.5549000D0
+GSP     49         8.2298730D0
+GPP     49         6.2992690D0
+GP2     49         4.9842110D0
+HSP     49         2.6314610D0
+DD      49         1.5766241D0
+QQ      49         1.7774563D0
+AM      49         0.2409004D0
+AD      49         0.4532655D0
+AQ      49         0.3689812D0
+GUES1   49,1        -0.3431380D0
+GUES2   49,1         1.9940340D0
+GUES3   49,1         1.6255160D0
+GUES1   49,2        -0.1095320D0
+GUES2   49,2         5.6832170D0
+GUES3   49,2         2.8670090D0
+C                    DATA FOR ELEMENT 50        TIN
+C      DATA REF    50   ' Sn:     ): J. J. P. STEWART, J. COMP. CHEM.
+C     1(ACCEPTED)                      '/
+USS     50       -34.5501920D0
+UPP     50       -25.8944190D0
+BETAS   50        -2.7858020D0
+BETAP   50        -2.0059990D0
+ZS      50         2.3733280D0
+ZP      50         1.6382330D0
+ALP     50         1.6996500D0
+EISOL   50       -78.8877790D0
+GSS     50        10.1900330D0
+GSP     50         7.2353270D0
+GPP     50         5.6738100D0
+GP2     50         5.1822140D0
+HSP     50         1.0331570D0
+DD      50         1.3120038D0
+QQ      50         1.5681814D0
+AM      50         0.3744959D0
+AD      50         0.3218163D0
+AQ      50         0.2832529D0
+GUES1   50,1        -0.1503530D0
+GUES2   50,1         6.0056940D0
+GUES3   50,1         1.7046420D0
+GUES1   50,2        -0.0444170D0
+GUES2   50,2         2.2573810D0
+GUES3   50,2         2.4698690D0
+C                    DATA FOR ELEMENT 51        ANTIMONY
+C      DATA REFPM3(51   ' Sb:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1(ACCEPTED)                      '/
+USS     51       -56.4321960D0
+UPP     51       -29.4349540D0
+BETAS   51       -14.7942170D0
+BETAP   51        -2.8179480D0
+ZS      51         2.3430390D0
+ZP      51         1.8999920D0
+ALP     51         2.0343010D0
+EISOL   51      -148.9382890D0
+GSS     51         9.2382770D0
+GSP     51         5.2776800D0
+GPP     51         6.3500000D0
+GP2     51         6.2500000D0
+HSP     51         2.4244640D0
+DD      51         1.4091903D0
+QQ      51         1.3521354D0
+AM      51         0.3395177D0
+AD      51         0.4589010D0
+AQ      51         0.2423472D0
+GUES1   51,1         3.0020280D0
+GUES2   51,1         6.0053420D0
+GUES3   51,1         0.8530600D0
+GUES1   51,2        -0.0188920D0
+GUES2   51,2         6.0114780D0
+GUES3   51,2         2.7933110D0
+C                    DATA FOR ELEMENT 52        TELLURIUM
+C      DATA REFPM3(52   ' Te:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1(ACCEPTED)                      '/
+USS     52       -44.9380360D0
+UPP     52       -46.3140990D0
+BETAS   52        -2.6651460D0
+BETAP   52        -3.8954300D0
+ZS      52         4.1654920D0
+ZP      52         1.6475550D0
+ALP     52         2.4850190D0
+EISOL   52      -168.0945925D0
+GSS     52        10.2550730D0
+GSP     52         8.1691450D0
+GPP     52         7.7775920D0
+GP2     52         7.7551210D0
+HSP     52         3.7724620D0
+DD      52         0.3484177D0
+QQ      52         1.5593085D0
+AM      52         0.3768862D0
+AD      52         1.1960743D0
+AQ      52         0.2184786D0
+GUES1   52,1         0.0333910D0
+GUES2   52,1         5.9563790D0
+GUES3   52,1         2.2775750D0
+GUES1   52,2        -1.9218670D0
+GUES2   52,2         4.9732190D0
+GUES3   52,2         0.5242430D0
+C                    DATA FOR ELEMENT 53        IODINE
+C      DATA REFPM3  53  '  I:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1 10, 209  1989).                '/
+USS     53       -96.4540370D0
+UPP     53       -61.0915820D0
+BETAS   53       -14.4942340D0
+BETAP   53        -5.8947030D0
+ZS      53         7.0010130D0
+ZP      53         2.4543540D0
+ZD      53         1.0000000D0
+ALP     53         1.9901850D0
+EISOL   53      -288.3160860D0
+GSS     53        13.6319430D0
+GSP     53        14.9904060D0
+GPP     53         7.2883300D0
+GP2     53         5.9664070D0
+HSP     53         2.6300350D0
+DD      53         0.1581469D0
+QQ      53         1.0467302D0
+AM      53         0.5009902D0
+AD      53         1.6699104D0
+AQ      53         0.5153082D0
+GUES1   53,1        -0.1314810D0
+GUES2   53,1         5.2064170D0
+GUES3   53,1         1.7488240D0
+GUES1   53,2        -0.0368970D0
+GUES2   53,2         6.0101170D0
+GUES3   53,2         2.7103730D0
+C                    DATA FOR ELEMENT 80        MERCURY
+C      DATA REFPM3(80   ' Hg:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1(ACCEPTED)                      '/
+USS     80       -17.7622290D0
+UPP     80       -18.3307510D0
+BETAS   80        -3.1013650D0
+BETAP   80        -3.4640310D0
+ZS      80         1.4768850D0
+ZP      80         2.4799510D0
+ALP     80         1.5293770D0
+EISOL   80       -28.8997380D0
+GSS     80         6.6247200D0
+GSP     80        10.6392970D0
+GPP     80        14.7092830D0
+GP2     80        16.0007400D0
+HSP     80         2.0363110D0
+DD      80         1.2317811D0
+QQ      80         1.2164033D0
+AM      80         0.2434664D0
+AD      80         0.4515472D0
+AQ      80         0.2618394D0
+GUES1   80,1         1.0827200D0
+GUES2   80,1         6.4965980D0
+GUES3   80,1         1.1951460D0
+GUES1   80,2        -0.0965530D0
+GUES2   80,2         3.9262810D0
+GUES3   80,2         2.6271600D0
+C                    DATA FOR ELEMENT 81        THALLIUM
+C      DATA REFPM3(81   ' Tl:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1(ACCEPTED)                      '/
+USS     81       -30.0531700D0
+UPP     81       -26.9206370D0
+BETAS   81        -1.0844950D0
+BETAP   81        -7.9467990D0
+ZS      81         6.8679210D0
+ZP      81         1.9694450D0
+ALP     81         1.3409510D0
+EISOL   81       -56.6492050D0
+GSS     81        10.4604120D0
+GSP     81        11.2238830D0
+GPP     81         4.9927850D0
+GP2     81         8.9627270D0
+HSP     81         2.5304060D0
+DD      81         0.0781362D0
+QQ      81         1.5317110D0
+AM      81         0.3844326D0
+AD      81         2.5741815D0
+AQ      81         0.2213264D0
+GUES1   81,1        -1.3613990D0
+GUES2   81,1         3.5572260D0
+GUES3   81,1         1.0928020D0
+GUES1   81,2        -0.0454010D0
+GUES2   81,2         2.3069950D0
+GUES3   81,2         2.9650290D0
+C                    DATA FOR ELEMENT 82        LEAD
+C      DATA REFPM3(82   ' Pb:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1(ACCEPTED)                      '/
+USS     82       -30.3227560D0
+UPP     82       -24.4258340D0
+BETAS   82        -6.1260240D0
+BETAP   82        -1.3954300D0
+ZS      82         3.1412890D0
+ZP      82         1.8924180D0
+ALP     82         1.6200450D0
+EISOL   82       -73.4660775D0
+GSS     82         7.0119920D0
+GSP     82         6.7937820D0
+GPP     82         5.1837800D0
+GP2     82         5.0456510D0
+HSP     82         1.5663020D0
+DD      82         0.9866290D0
+QQ      82         1.5940562D0
+AM      82         0.2576991D0
+AD      82         0.4527678D0
+AQ      82         0.2150175D0
+GUES1   82,1        -0.1225760D0
+GUES2   82,1         6.0030620D0
+GUES3   82,1         1.9015970D0
+GUES1   82,2        -0.0566480D0
+GUES2   82,2         4.7437050D0
+GUES3   82,2         2.8618790D0
+C                    DATA FOR ELEMENT 83        BISMUTH
+C      DATA REFPM3(83   ' Bi:  PM3): J. J. P. STEWART, J. COMP. CHEM.
+C     1(ACCEPTED)                      '/
+USS     83       -33.4959380D0
+UPP     83       -35.5210260D0
+BETAS   83        -5.6072830D0
+BETAP   83        -5.8001520D0
+ZS      83         4.9164510D0
+ZP      83         1.9349350D0
+ALP     83         1.8574310D0
+EISOL   83      -109.2774910D0
+GSS     83         4.9894800D0
+GSP     83         6.1033080D0
+GPP     83         8.6960070D0
+GP2     83         8.3354470D0
+HSP     83         0.5991220D0
+DD      83         0.2798609D0
+QQ      83         1.5590294D0
+AM      83         0.1833693D0
+AD      83         0.6776013D0
+AQ      83         0.2586520D0
+GUES1   83,1         2.5816930D0
+GUES2   83,1         5.0940220D0
+GUES3   83,1         0.4997870D0
+GUES1   83,2         0.0603200D0
+GUES2   83,2         6.0015380D0
+GUES3   83,2         2.4279700D0
+C                    DATA FOR ELEMENT  103      CAPPED BOND
+C      DATA REFPM3(102  ' Cb:  PM3):  Capped Bond   Hydrogen-like, takes
+C     1on a  zero charge.)             '/
+C
+C          ATOM PARAMETER SETS FOR MNDO, MNDOD, AM1, PM3 METHODS
+C
+cZS      24         2.43090414
+cZP      24         1.98238038
+cZD      24         1.71840844
+cBS      24       -11.80342602
+cBP      24       -11.87838015
+cBD      24       -11.88913317
+cALP     24         2.13946915
+cADD     24,1        .34449114
+cADD     24,2        .27790942
+cADD     24,3        .47561194
+cADD     24,4        .56061641
+cADD     24,5        .52004521
+cGUES1   24,1        .39875257
+cGUES2   24,1       1.23541028
+cGUES3   24,1       1.33639923
+cGUES1   24,2       -.24679549
+cGUES2   24,2       1.53637526
+cGUES3   24,2       1.67352897
+cUSS     24       -54.61022021
+cUPP     24       -48.60967523
+cUDD     24       -63.01532540
+cEISOL   24       -218.92547032
+C
+ZS      24         2.34622325
+ZP      24         2.00178248
+ZD      24         1.72669581
+BS      24       -11.65162114
+BP      24       -11.88275307
+BD      24       -11.90607443
+ALP     24         2.14159226
+ADD     24,1        .35806839
+ADD     24,2        .27833714
+ADD     24,3        .46864540
+ADD     24,4        .49315131
+ADD     24,5        .41285722
+GUES1   24,1        .40510231
+GUES2   24,1       1.23212728
+GUES3   24,1       1.33757996
+GUES1   24,2       -.24538386
+GUES2   24,2       1.53608999
+GUES3   24,2       1.67419593
+USS     24       -54.60909970
+UPP     24       -48.61489516
+UDD     24       -63.05925611
+EISOL   24       -219.44512351
+C
+//END

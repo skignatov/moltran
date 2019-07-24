@@ -1,0 +1,472 @@
+                            MOLTRAN v.2.5
+
+                             Short manual
+
+
+WHAT IS MOLTRAN?
+~~~~~~~~~~~~~~~~
+Moltran is a program designed for analysis of the output information 
+after quantum chemical calculations performed with widely used 
+quantum chemical programs (including well-known packages Gaussian 
+and GAMESS), i.e.
+- visualization, analysis, and correction of molecular structures 
+  after (and during) geometry optimization;
+- animation of molecular vibrations after normal mode calculations;
+- fast and flexible thermodynamic property evaluation 
+  after frequency calculations.
+
+
+WHAT KINDS OF QUANTUM CHEMICAL FORMATS DOES MOLTRAN KNOW?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Moltran automatically recognizes and/or read by request the following 
+file formats:
+- Gaussian94 (Gaussian94w) output (geometry, frequencies and normal modes)
+- Gaussian98 (Gaussian98w) output (geometry, frequencies and normal modes)
+- GAMESS v.4 (PC GAMESS v.4) output (geometry, frequencies and normal modes)
+- GAMESS v.5 (PC GAMESS v.5) output (geometry, frequencies and normal modes)
+- GAMESS v.6 (PC GAMESS v.6) output (geometry, frequencies and normal modes)
+- ADANIMEHS v.1 geometry
+- XYZ cartesian coordinate files (of different structure, e.g. input files
+  with Cartesian coordinates used by Gamess and Gaussian)
+- the files created by MOLTRAN itself
+- the files of arbitrary structure containing the coordinate sets and energies
+  (this option requires the customization of the input file structure using
+   Moltran.cfg file)
+
+
+WHAT CAN MOLTRAN DO?
+~~~~~~~~~~~~~~~~~~~~
+Now, Moltran can perform:
+1. Analysis of molecular structures after the quantum chemical calculation. i.e:
+   - automatic recognition of following file formats: 
+       - Gaussian94
+       - Gaussian98
+       - GAMESS (PC GAMESS) v.4
+       - GAMESS (PC GAMESS) v.5
+       - GAMESS (PC GAMESS) v.6
+       - ADANIMEHS v.1
+       - MOLTRAN v.2
+   - importing structures from cartesian xyz files
+   - visualizing all the intermediate molecular structures at each  
+     optimization cycle during the geometry optimization
+   - animation of structure changes during the geometry optimization
+   - automatic bonds recognition during the geometry input
+   - manual setting of bonds
+   - perspective/regular view
+   - manual setting the perspective factors
+   - translation/rotation of molecule
+   - manual setting of translation/rotation steps
+   - relative moving of different fragments of molecule
+   - saving of last view coordinates of molecule
+   - saving of selected orientation of molecule (e.g.edited geometry)
+   - showing of coordinate axes
+   - measurement of bond lenghts between selected atoms
+   - measurement of bond angles between selected bonds
+   - measurement of torsion angles between selected planes
+   - calculation and printing the inertia tensor matrix
+   - calculation and printing the principal moments of inertia
+   - reducing the molecule to the inertial axes
+2. Animation of molecular vibrations and generation of molecular
+   coordinates distorted by selected vibration
+3. Editing of a molecular structure (i.e. work as a molecular buillder)
+   - adding and deleting of atoms and molecular fragments 
+   - setting of bond length between two atoms(fragments)
+   - setting of the valence and dihedral angles
+   - setting of Z-matrix orientation of fragments relatively each another
+4. Using the Fragment Database to save the fragments and use them later
+   to construct more complicated structures 
+5. Calculation of thermodynamic properties:
+      - internal energy  
+      - enthalpy 
+      - entropy  
+      - Gibbs free energy
+      - heat capacities (Cv and Cp)
+   - calculation of partition function (statsum) for the thermodynamic and/or kinetic studies
+   - calculation translational, rotational, and vibrational contributions
+   - manual setting temperature and pressure
+   - calculation of thermodynamic properties in manually defined temperature ranges
+6. Taking into account the internal rotation contributions into the thermodynamics
+   using the different approximations for calculation of internal rotation 
+   contributions: 
+    - harmonic osillator
+    - free rotator
+    - Pitzer-Gwinn method (both for single and multiple rotors in molecule)
+    Two different estimators for the molecular moments of inertia are used
+    together with the automatic calculations of internal rotation enrgy, 
+    enthalpy and entropy using the Pitzer-Gwinn tables.
+7. Generation of the geometry and input files for the calculation of rotation 
+   potentials in the case of molecules with internal rotations. Automatic 
+   estimation of the rotation barrier heights using the Fourier transformation
+   of the calculated potentials.
+8. Generation of input information (molecular coordinates and frequencies)
+   for MolScript and IRSpectrumScript - CorelDraw scripts designed for
+   creation of high-quality drawings of molecular structures and IR spectra
+   suitable for journal publications.
+
+
+HOW TO RUN MOLTRAN?
+~~~~~~~~~~~~~~~~~~~
+The ways to run MOLTRAN are different. However, it is better to use 
+any command string processor (say, FAR, WinCommander, NortonCommander etc)
+to run MolTran from the command string.
+
+Before first run, it is recommended to do the following operations:
+
+1. Place files MolTran.exe and MolTran.cfg to the directory 
+   of your common use (say, c:\utils).
+2. Include this directory to your PATH variable (PATH=c:\utils;...)
+3. Set environment variable MOLTRAN to this directory name: (MOLTRAN=c:\utils)
+   (NOTE: As a rule, PATH and MOLTRAN variables take effect only after reboot!)
+
+Now, use the command string processor:
+1. Go to the directory with the input file (i.e. output file 
+   of your QC program) 
+2. From the command string run MolTran by the command:
+
+                 moltran <filename.ext> [options]
+
+<filename.ext> - full name (with extension) of your file containing 
+                 the quantum chemical results, i.e., the regular output file 
+                 of one of quantum chemical programs: Gaussian,
+                 Gamess etc. 
+
+COMMAND STRING OPTIONS:  
+          /g94  - forces the Gaussian94 format (if not recognized automatically)
+          /g98  - forces the Gaussian98 format (if not recognized automatically)
+          /gam4 - forces the GAMESS v.4 format (if not recognized automatically)
+          /gam5 - forces the GAMESS v.5 format (if not recognized automatically)
+          /nxyz<number> - forces the xyz format: the file with a sequence of 
+                  lines in a form (NXYZ):
+                  <Atom Name>  <Xcoord>  <Ycoord>  <Zcoord>
+                  End of geometry - the blank line. 
+                  <number> is a number of lines from the beginning of file
+                  to be skipped before start of molecular coordinates. Defaul: 2
+                  <Atom Name> can be one of three: (1) an atomic number 
+                  (real or integer) or (2) element name or (3) element name 
+                  followed by any number.
+          /x<number> - the same as /nxyz
+          /ndxyz<number> - the same as /nxyz but the lines have a form:
+                  <Atom Name> <Dummy> <Xcord> <Ycoord> <Zcoord>
+                  <Dummy> is any sequence of characters (not read-in)
+          /dnxyz<number> - the same as /nxyz but the lines have a form:
+                  <Dummy> <Atom Name> <Xcord> <Ycoord> <Zcoord>
+                  <Dummy> is any sequence of characters (not read-in)
+          /pat<SectionName> - forces input by pattern described in the
+                  corresponding section of the configuration file (MolTran.cfg). 
+                  <SectionName> is a name of section of MolTran.cfg (without
+                  brackets) describing the corresponding file format. 
+                  If not set, [Default] section of MolTran.cfg will be used. 
+                  Example: /patAdanimehs - sets the file format to the
+                  pattern described in [Adanimehs] section of MolTran.cfg
+          /hb or hb<X> - the H-bonds should be shown (O...H and N...H long
+                  distant atoms should be connected). The X is a distance
+                  treshold for H-bond (default is 2.5A). 
+                  /hb shows the H-bonds with default treshold. 
+                  Example: /hb2.1 - treat all the O...H and N...H contacts
+                  shorter than 2.1 A as H-bonds (connect them at the screen).
+          /i    - read the input orientations in Gaussian output file
+          /z    - read the Z-matrix orientations in Gaussian output file
+          /au   - forces the atomic units (Bohr) for the reading of the 
+                  geometry coordinates (relevant only to the XYZ input 
+                  file formats: /x<N>, /nxyz, /ndxyz, /dnxyz)
+          /bohr - the same as /au
+          /c<number> - set the number of optimization cycles (default 300)
+          /tt<T>- sets the fixed temperature to T (in K) for thermodynamic 
+                  calculations. Example: /tt300 (default T = 298.15 K)
+          /pp<P>- sets the fixed pressure to P (in atm) for thermodynamic 
+                  calculations. Example: /pp2.5 (default P = 1atm=101325Pa)
+          /rotnum<N> - sets to N the rotation number of molecule 
+                  in thermodynamic calculations (default=1)
+          /rot<N> - the same as /rotnum<N>
+          /ts     - indicates that the molecular thermodynamics should be 
+                  calculated as for a transition state (one of translational 
+                  degrees of freedom is ignored)
+          /fx<FLim> -sets the bottom limit for the frequency values (in cm-1)
+                  used in the thermodynamics evaluation. All the vibrations
+                  with the (unscaled) frequency lesser FLim will be ignored.
+                  Example: /fx300  /Fx20.5 . Default: 0 cm-1.
+          /rx<RMlim> - sets the upper limit (in AMU) for reduced masses used in
+                  TD calculations. The modes with reduced mass greater 
+                  than RMlim will not be included into the TD functions.
+                  (useful for cluster calculations with massive boundary atoms)
+                  Default: 10**8 amu (all modes included). Example: /rx50
+          /mult<M> - spin multiplicity of molecule (used in thermodynamic calculations)
+                  It is read-in automatically from GAUSSIAN and GAMESS output.
+                  However, you should set it explicitly in the case of other 
+                  input formats. Example: /mult3 (triplet molecule); 
+                  /mult2 (free radical). Default: M=1 (regular singlet molecule).                   
+          /thermo<Tbeg-Tend-StepT> - sets temperature ranges (in K) 
+                  for thermodynamic calculations. Example: /thermo100-2000-10
+                  (Default: 100-500-10)
+          /scale<ScalingFactor> - sets the scaling factor for the vibration 
+                  frequencies used in the thermodynamic calculations 
+                  Example: /scale0.8929 - set te scaling factor value to 0.8929
+                  (Default: 1.0000)
+          /@<filename> - reads parameters for the thermodynamic calculations
+                  from the external file <filename>. Description of the parameter file 
+                  see below.
+          /nolog  suppresses creating the log (output) file
+          /0      suppresses the window interface (reading the molecular
+                  data, making thermochemistry calculations, then exit)
+          
+NOTE: Moltran automatically recognizes the regular Gaussian, Gamess, Adanimehs 
+      and Moltran outputs (by reading the standard file header generated by 
+      the corresponding program). Therefore, there is no need to use the
+      /g94, /g98, /gam4, /gam5 options at all if your file has the standard
+      header. These options are useful only in the case when you have
+      corrupted or incomplete files without the corresponding file header
+      (for example, if you have a file fragment downloaded from a remote 
+      computer).
+
+EXAMPLES: 
+         (1) If h2o.out is a regular Gaussian98 output file containing the
+         results of H2O optimization, you can run MolTran simply by typing:
+
+         moltran h2o.out
+
+        
+         (2) If ch4.txt is a fragment of Gamess v.5 file without header
+         (say, corrupted file downloaded from the remote computer) type:
+
+         moltran ch4.txt /gam5
+
+
+         (3) If you wish to inspect input orientations in a file c5h5.out
+         generated by Gaussian98, type:
+
+         moltran c5h5.out /i
+
+         
+         (4) If you have a long optimization file polymer.out containing
+         319 optimization cycles, type:
+
+         moltran polymer.out /c320
+
+         
+After the MOLTRAN start, follow the window instructions to translate/rotate
+or zoom the molecule, animate the normal modes, show different optimization 
+steps etc. Use mouse clicks to select atoms or bonds and to measure 
+bond lenghts and angles.
+
+
+HOW TO USE THE GRAPHICAL INTERFACE?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+After the MOLTRAN start, the graphical interface allow you to work with
+the molecular geometry. 
+
+The main command keys are:
+F1  - Help on graphical interface commands
+F2  - Geometry View mode
+F3  - Vibration View mode
+F4  - Structure Edit mode
+F10 - Quit program
+
+There are three main modes of the window interface: 
+     - Geometry view (default mode, press F2 from other modes) 
+                 - you can translate, rotate, zoom the molecule,
+                 measure the distances & angles, set the parameters of
+                 viewing, bound/unbound the atoms, switch between the
+                 different coordinate sets (between geometries 
+                 of different optimization cycles), switch between
+                 perspective/regular view, switch to Vibration view,
+                 to Fragment view, save the current geometry to the
+                 file, exit the program.
+     - Vibration view (press F3 from other modes)
+                 - you can animate vibrations, choose the vibration mode,
+                 translate, rotate, zoom, switch to Geometry View, exit the
+                 program.
+     - Structure Edit (press F4 from other modes)
+                 - you can mark/unmark the fragment of molecule,
+                 translate and rotate the fragment relatively to other
+                 parts of molecule, switch to Geometry View
+
+In general, the control keys are different for these three modes. Refer to
+the control keys window or Help screen for the commands and corresponding keys 
+available in the current mode. Capital and small letters are not distinguished.
+
+Important note:
+1. All the commands are recognized when the MOLECULAR VIEW window is focused. 
+   Other windows ignore your commands.
+
+
+External Parameter File commands for the thermodynamic calculations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can use the external file to set the parameters and commands used in the
+thermodynamic calculations. To specify the external file name, use the
+command string option /@<filename> (see above) or just create the file
+with the same name as input file and extension .DAT: <inputfile>.dat
+This file should be placed in the same directory where the input file 
+located. The use of DAT file is similar to the command string options
+/rot /thermo /scale /tt /pp. However, it allows additionally to treat 
+some of vibration modes as internal rotations by replacing the 
+vibrational statsums by corresponding quantities calculated for the rotating 
+tops. Thus, the use of the DAT file is necessary only in the case of detailed 
+thermochemistry calculations with explicit consideration for internal 
+rotations.
+
+
+The DAT-file is a plain text file. Each string of this file can have
+one or several commands in a format:
+
+              <Command>=[(]Value1[,Value2,...)]> 
+
+(NOTE: the VIBR command (see below) can not be mixed with other commands and 
+should be present at the separate string)
+
+The commands are:
+~~~~~~~~~~~~~~~~~
+RotNum=<N>      - sets the rotation symmetry number for the whole molecule to N
+
+T=<temperature> - sets the absolute temperature in K. Example: T=300 
+                  (Default: 298)
+
+P=<pressure>    - sets the pressure in Pa. Example: P=150000 (Default: 101325)
+
+ZeroModes=<list of modes> - specifies the vibration modes which should 
+                  have no contributions into the vibrational statsums 
+                  (translations, pure rotations, the modes treated as internal 
+                  rotations or, sometimes, the modes corresponding to
+                  imaginary frequencies) 
+                  Example: ZeroModes=(1,2,3,4,5,6,8) (Default: 1,2,3,4,5,6)
+
+Scale=<scaling factor> - sets the frequency scaling factor value for the 
+                  thermochemistry calculations. Example: Scale=0.8929
+                  (Default: 1.0000)
+
+TS                indicates that the molecular thermodynamics should be 
+                  calculated as for a transition state (one of translational 
+                  degrees of freedom is ignored)
+
+GenCoord        - forces the additional output to the log file and creation
+                  of the GAMESS input files with the molecular coordinates 
+                  corresponding the internal rotation.
+                  The file names  are:  
+                  <Input_filename>_<No.of_int.rotation>_<Rot.angle>.inp
+                  The coordinates are generated for each internal rotation 
+                  through 20 degrees starting from the source structure.
+                  Number of files: 180/20+1=19 for each rotation.
+
+GenCoordAngle=<A>- as in previous command but the rotation angle set to A
+                  Number of generated files: 180/A+1 for each rotation.
+
+Pattern=<FileName.Ext> - name of pattern file for generation of rotation 
+                  coordinates. This file contains the commands of
+                  appropriate QC-program (e.g. Gaussian9x or GAMESS) and
+                  will be used to generate the input files composed for the
+                  quantum chemical calculation of rotation barrier.  
+                  The keywords %Geo%, %GeoG98%, %GeoGAM% may be used 
+                  among the pattern strings to indicate the position where 
+                  the geometry coordinates of molecule with rotating group 
+                  should be placed. The extension of the generated input 
+                  files will be the same as <.Ext> If the keyword Pattern
+                  is not set then the default pattern (GAMESS MP2/6-311+(3df,2p))
+                  will be used for the coord generation.
+
+Vibr=<n>  - specifies the vibration mode n which should be replaced
+            by internal rotation using the additional parameters specified 
+            at the same string. These additional parameters are:
+
+            Rot=<N>  - sets the symmetry number for the internal rotation to N
+            Group=(n1,n2,n3...)  - set first of two groups of atoms participating 
+                     in the mutual rotation relatively to each another.
+            Axis=(0,0) -sets the number of atoms forming the rotation axis. If
+                     the number of atom is 0, the center of mass of corresponding 
+                     rotating group is used.
+            V0=<Value> - sets the value of the potential barrier for the internal 
+                     rotation. Units are specified by the <Units> command.
+                     V0 is not obligatory command.
+            ReadPotential - specifies that the values of the rotation potential
+                     should be read-in from several following lines followed by
+                     the blank line. Format of the potential curve is: 
+                     <AngleValue> <EnergyValue>
+                     Example:
+                     Vibr=7 Rot=3 Group=(5,6) Axis=(1,5) ReadPotential
+                     0.   -154.0647454492
+                     20.  -154.0636747721
+                     40.  -154.0614275844
+                     60.  -154.0600757421
+                     80.  -154.0608010350
+                     100. -154.0626488392
+                     120. -154.0635799097
+                     140. -154.0625335339
+                     160. -154.0604342759
+                     180. -154.0593612907
+
+             <Units> - sets the units for the potential energy in V0= or
+                     ReadPotential commands. The possible units are:
+                     KCAL - kilocalories per mol
+                     KJ   - kiloJoules per mol   (default for V0)
+                     AU or A.U. - hartrees       (default for ReadPotential)
+
+            The commands V0, ReadPotential and <Units> are not mandatory. If
+            they are not present, the rotation barrier willbe estimated
+            from the corresponding frequency of the torsional vibration.
+            
+            Example for CH3OH molecule (numbering of atoms are as folows
+            H of hydroxyl - #1, O - #2, C - #3 ...) :
+
+            Vibr=7 Rot=3 Group=(1,2) Axis=(2,3)
+
+            Here Vibr=7 sets the number of the suitable low-frequency vibration
+            which is corresponds to the internal rotation of OH group relatively
+            O-C bond; Rot=1 - specifies that the rotation number is 3 (rotation 
+            potential has 3 minima); One of the rotation groups is atoms 1 and 2
+            (and another group includes all the remaining atoms); the rotation 
+            axes is a bond between atoms 2 and 3.
+
+
+EXAMPLE of the DAT file:
+~~~~~~~~~~~~~~~~~~~~~~~~            
+--- beg of file ---
+T=298.15 P=101325. ZeroModes=(1,2,3,4,5,6) RotNum=1 Scale=0.8929 GenCoord
+Vibr=7  Rot=3 Group=(6,7,8,9)  Axis=(0,0) 
+Vibr=8  Rot=3 Group=(2,3,4,5)  Axis=(1,2) ReadPotential
+0.   -154.0647454492
+20.  -154.0636747721
+40.  -154.0614275844
+60.  -154.0600757421
+80.  -154.0608010350
+100. -154.0626488392
+120. -154.0635799097
+140. -154.0625335339
+160. -154.0604342759
+180. -154.0593612907
+
+Vibr=9  Rot=3 Group=(6,7,8,9)  Axis=(7,3) V0=2.25 Kcal
+--- end of file ---
+
+
+MOLTRAN DISTRIBUTION AND UPDATES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MOLTRAN is a free program. The only requirement for its use is a references 
+if you publish the results obtained with it (e.g. results of TD calculations).
+Please refer the program version you used as follows:
+
+S.K.Ignatov, Moltran v.2.5, http://ichem.unn.runnet.ru/tcg/Moltran, 2004.
+
+PLEASE NOTE THAT MOLTRAN IS A RESEARCH SOFTWARE AND DISTRIBUTED 
+ON "AS IS" BASE. PROBABLE BUGS CAN NOT BE A BASIS OF ANY PRETENSIONS.
+WE SHOULD APPRECIATE RECEIVING YOUR COMMENTS, ADVICES, BUG REPORTS 
+AND REQUESTS FOR FURTHER IMPROVEMENTS.
+
+The newer versions of MOLTRAN and documentations can also be found at 
+http://ichem.unn.runnet.ru/tcg/Moltran
+
+
+ADDRESSES
+~~~~~~~~~
+Please send your comments, questions, advices, bug reports, 
+and requests for further improvements to:
+
+Dr Stanislav K. Ignatov
+Department of Chemistry and Research Institute of Chemistry, 
+University of Nizhny Novgorod, 23 Gagarin Avenue, 
+Nizhny Novgorod 603600, Russia
+Email   : ignatov@ichem.unn.runnet.ru
+Homepage: http://ichem.unn.runnet.ru/tcg
+Phone   : +7-831-265-8035
+
+
+
+
