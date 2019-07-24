@@ -14,3 +14,8 @@
              *             http://ichem.unn.ru/Moltran             *
              *         Nizhny Novgorod, Russia, 1999-2007          *
              *******************************************************
+
+For the first Moltran installation, download MoltranSetupWin7.exe (win7-10) and run it. 
+Due to Windows restrictions, it is recommended to use simple program folder (e.g. c:\moltran) instead of Program Files.
+Once Moltran installed, you can download only the last exe version (moltran_r????.exe), 
+put it to the program folder and rename it to moltran.exe
