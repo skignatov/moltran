@@ -12,7 +12,7 @@
              * N.I.Lobachevsky State University of Nizhny Novgorod *
              *                 ignatov@ichem.unn.ru                *
              *             http://ichem.unn.ru/Moltran             *
-             *         Nizhny Novgorod, Russia, 1999-2007          *
+             *         Nizhny Novgorod, Russia, 1999-2021          *
              *******************************************************
 
 For the first Moltran installation, download MoltranSetupWin7.exe (win7-10) and run it. 
