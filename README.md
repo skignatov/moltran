@@ -2,7 +2,7 @@
 
              *******************************************************
              *                   MOLTRAN v.2.5                     *
-             *               (build number  2277)                  *
+             *               (build number  2491)                  *
              *        A program for molecular visualization,       *
              *                normal modes animation,              *
              *      and thermochemical properties evaluation.      *
